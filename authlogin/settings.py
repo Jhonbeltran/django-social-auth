@@ -25,7 +25,7 @@ SECRET_KEY = 'nse*j@giooa8h3cp(7-5b0zkfcb#dha18uq3f-x0_c7rtn7r2='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['authlogin.com',]
 
 
 # Application definition
@@ -138,3 +138,13 @@ STATIC_URL = '/static/'
 
 
 SOCIAL_AUTH_ADMIN_USER_SEARCH_FIELDS = ['username', 'email']
+
+SOCIAL_AUTH_FACEBOOK_KEY = '602121879986461'
+SOCIAL_AUTH_FACEBOOK_SECRET = '49c8f84d3dbf7f0c550f1cc273189986'
+
+SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+
+SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
+  'locale': 'en_US',
+  'fields': 'id, name, email, age_range'
+}
