@@ -101,6 +101,7 @@ AUTHENTICATION_BACKENDS = [
     'social_core.backends.google.GoogleOAuth',
     'social_core.backends.twitter.TwitterOAuth',
     'social_core.backends.yahoo.YahooOpenId',
+    'social_core.backends.google.GooglePlusAuth',
     
     'django.contrib.auth.backends.ModelBackend',
 ]
@@ -152,5 +153,11 @@ SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
   'locale': 'en_US',
   'fields': 'id, name, email, age_range'
 }
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '847285179546-l3fal1kbmagoojmeu71hag1tjfr2ogjp.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'sr0tMp29K_ZhYMPxPZmyH93t'
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_SCOPE = ['email']
+
 
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = "/"
